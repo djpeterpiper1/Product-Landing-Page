@@ -1,0 +1,363 @@
+
+/*Global*/
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(1, 171, 170,1);
+    color: white;
+    width: 100%;
+}
+
+
+.container{
+    margin: auto;
+    width: 80%;
+    z-index: 0;
+    height: auto;
+}
+
+/*Header*/
+
+#header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color:white;
+} 
+
+#header p{
+    margin-left: -650px;
+    font-size: 35px;
+    color: rgba(0, 0, 0,1);
+}
+
+header img{
+    height: 80px;
+    width:80px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0,1);
+    margin: 0px 10px;
+    text-transform: uppercase;
+}
+
+nav{
+    margin-right: 50px;
+    font-size: 18px;
+    word-spacing: 1px;
+}
+
+
+/*Tagline Section*/
+
+.tagline .container{
+    text-align: center;
+    margin-bottom: 200px;
+   position: relative;
+   top:120px;
+   z-index: 0;
+    /*border:2px solid red;*/
+}
+
+
+/*Features Section*/
+
+#features{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top:-30px;
+  /* border:2px solid red;*/
+}
+
+#features .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+}
+
+.sound-img img{
+    
+ align-self: center;
+   /* margin-top:30px;*/
+    height:40px;
+    width:40px;
+   /* border:2px solid red;*/
+  
+    
+}
+
+
+.sound{
+    display: flex;
+    align-items: center;
+    /*border:2px solid red;*/
+    margin-left: 10px;
+    width: 80%;
+    height: auto;
+    /*background-color: black;*/
+    margin-bottom: 40px;
+}
+
+.sound h2{
+    margin-left: 20px;
+}
+
+.design-img img{
+    align-self: center;
+    /*margin-top:30px;*/
+    height:40px;
+    width:40px;
+    /*border:2px solid red;*/
+}
+
+
+.design{
+    display: flex;
+    align-items: center;
+    /*border:2px solid red;*/
+    margin-left: 10px;
+    width: 80%; 
+    
+    margin-top: -50px;
+   /* background-color: black;*/
+}
+
+.design h2{
+    margin-left: 20px;
+
+}
+
+.design ul{
+    margin-top: 90px;
+}
+
+.power-img img{
+    align-self: center;
+    /*margin-top:30px;*/
+    height:40px;
+    width:40px;
+   /* border:2px solid red;*/
+}
+
+
+
+.power{
+    display: flex;
+    align-items: center;
+    /*border:2px solid red;*/
+    margin-left: 10px;
+    width: 80%; 
+    margin-top: -50px;
+    /*background-color: black;*/
+}
+
+.power h2{
+    margin-left: 20px;
+}
+
+.power ul{
+    margin-top: 110px;
+}
+
+/*How They Sound Section*/
+#howtheysound .container{
+    display: flex;
+   justify-content: center;
+    /*border:2px solid red;*/
+    margin-bottom: 100px;
+}
+
+
+/*Pricing Section*/
+
+#pricing .container{
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+padding-top: 40px;
+margin-bottom: 100px;
+flex-wrap: wrap;
+
+}
+
+.spec-img{
+   /* border:2px solid red;*/
+}
+
+.spec-header img{
+    height: 200px;
+    width: 300px;
+    align-self: center;
+}
+
+
+.spec-header{
+    display: flex;
+    flex-direction: column;
+   
+    /*border:2px solid red;*/
+    max-width: 100%;
+}
+
+
+.spec-back{
+    margin-top: 30px;
+    background-color:rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border:2px solid red;*/
+    color: white;
+    max-width: 100%;
+}
+
+.spec-header p{
+   align-self: center;
+    max-width: 60%;
+    
+}
+
+
+
+.price{
+    font-weight: bold;
+}
+
+.pricebox{
+    background-color: #fedc3d;
+    border-radius: 10%;
+    
+    /*width:70px;*/
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+}
+
+
+footer{
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    background-color:white;
+    color: black;
+    padding-top: 20px;
+    /*margin: auto;*/
+   
+   
+}
+
+footer p{
+    margin-right: 5px;
+   
+}
+
+
+footer  a{
+    
+    margin-right: 5px;
+    
+}
+
+@media screen and (max-width: 1240px){
+
+    #header p{
+        margin-left: -400px;
+      
+    }
+
+    .spec-header img{
+       margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #header p{
+        margin-left: -150px;  
+    }
+    #pricing {
+
+       margin-top: -50px;
+    }
+   
+}
+
+@media screen and (max-width: 480px){
+
+    a{
+        display: none;
+    }
+   
+    #header {
+        padding-left: 100px;
+    }
+
+    .sound{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+    }
+
+    .sound ul{
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+
+    .sound-img{
+        display: flex;
+       justify-content: center;
+        
+        width: 100px;
+        margin-left: 20px;
+    }
+    .design{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+    }
+
+    .design ul{
+        margin-top: -12px;
+    }
+
+
+    .design-img{
+        display: flex;
+       justify-content: center;
+        width: 100px;
+        margin-left: 20px;
+    }
+    .power{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .power ul{
+        margin-top: -12px;
+    }
+
+    .power-img{
+       display: flex;
+       justify-content: center;
+        width: 100px;
+        margin-left: 20px;
+    }
+}
